@@ -29,3 +29,5 @@ function mergeSortedArray(a, b){
   }
   console.log(merged);
 }
+
+mergeSortedArray([2,5,6,9],[1,2,3,29]);
