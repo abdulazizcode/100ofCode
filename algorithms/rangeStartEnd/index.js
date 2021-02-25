@@ -13,6 +13,14 @@ function  range(start,end,step){
       return newArr;
 }
 
+function sum(array){
+	let total = 0;
+	for(let i = 0; i<array.length; i++){
+		total += array[i];
+	}
+	return total;
+
+}
 console.log(range(1,10,2)); //custom step
 console.log(range(1,10)); //default step
-
+console.log(sum(range(1,10))); //sum of range
