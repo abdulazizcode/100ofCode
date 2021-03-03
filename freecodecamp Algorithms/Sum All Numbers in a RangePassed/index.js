@@ -14,14 +14,26 @@ function sumAll(arr){
 	//Destructuring
 	const [max, min] = [Math.max(...arr), Math.min(...arr)];
 
+
 	// variable to hold our sum
 	let sum = 0;
 
 	// loop and add all numbers from lowest to highest value
 	for(let i = min; i <=max; i++){
-		sum += i;
+         	sum += i;
 	}
 	return sum;
+
+
+	/*  Math Solution: 
+	 *  
+	 *
+	 *  const count = max - min + 1;
+	 *
+	 *  return ((min + max) * count) / 2;
+	 *
+	 *
+	 *  */
 }
 
 console.log(sumAll([1,4]));
