@@ -8,8 +8,11 @@ For example, sumAll([4,1]) should return 10 because sum of all the numbers betwe
 
 function sumAll(arr){
 	// Find min and max numbers in array
-	const max = Math.max(...arr);
-	const min = Math.min(...arr);
+	//const max = Math.max(...arr);
+	//const min = Math.min(...arr);
+
+	//Destructuring
+	const [max, min] = [Math.max(...arr), Math.min(...arr)];
 
 	// variable to hold our sum
 	let sum = 0;
