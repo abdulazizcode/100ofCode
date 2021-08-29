@@ -39,3 +39,24 @@ const binarySearch = (array, target) => {
 
 console.log(binarySearch([2,5,6,54,89,3,6],6));
 
+
+/////////////////////////////////////////////////////// SORTING ARRAY ////////////////////////////////////
+const arr = [21,25,65,99,2,5,6,85];
+
+function swap(arr,index1,index2){
+	var temp = arr[index1];
+	arr[index1] = arr[index2];
+	arr[index2] = temp;
+}
+function bubleSort(arr){
+	for(let i = 0; i<arr.length;i++){
+		for(let j =0; j<=i; j++){
+			if(arr[i] < arr[j]){
+				swap(arr, i, j)
+			}
+		}
+	}
+	console.log(arr);
+}
+
+bubleSort(arr);
