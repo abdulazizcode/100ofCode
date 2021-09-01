@@ -45,3 +45,16 @@ const secondAproach = (arr1,arr2) =>{
 const array1 = ['a', 'd', 'm', 'x'];
 const array2 = ['p', 'y', 'k','a'];
 console.log(secondAproach(array1,array2));
+
+
+// Declare two array
+const array1= ['a', 'b', 'x', 'z'];
+const array2= ['k', 'x', 'c'] 
+  
+// Iterate through each element in the
+// first array and if some of them 
+// include the elements in the second
+// array then return true.
+function findCommonElements3(arr1, arr2) {
+    return arr1.some(item => arr2.includes(item))
+}
